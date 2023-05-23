@@ -3,13 +3,13 @@ int main()
 {
     int n,m,sn,s=0,r;
     scanf("%d",&n);
-    sn=n*n;
-    m=sn;
+    sn = n*n;
+    m = sn;
     while(m!=0)
     {
-        r=m%10;
-        s=s+r;
-        m=m/10;
+        r = m%10;
+        s = s+r;
+        m = m/10;
     }
     if(n==s)
     {
