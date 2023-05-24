@@ -1,25 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,x,y,i,p;
-    scanf("%d%d",&a,&b);
-    if(a>b)
+    int n,m,lcm=1,i;
+    scanf("%d%d",&n,&m);
+    for(i=lcm;i<10000;i++)
     {
-        x=a;
-        y=b;
-    }
-    else
-    {
-        x=b;
-        y=a;
-    }
-    for(i=1;i<x*b;i++)
-    {
-        p = x*i;
-        if(p%y==0)
+        if(lcm%n==0 && lcm%m==0)
         {
-            printf("%d",p);
             break;
         }
+        else{
+            lcm++;
+        }
     }
+    printf("%d",lcm);
 }
